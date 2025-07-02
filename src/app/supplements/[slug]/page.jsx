@@ -1,3 +1,4 @@
+
 import SupplementCard from "@/components/Supplement";
 
 const supplementData = {
@@ -53,8 +54,7 @@ const supplementData = {
 
 
 export default async function SupplementPage({params}) {
-  const {slug} = await params
-  const supplement = supplementData[slug];
+  const supplement = await supplementData[params.slug];
 
   if (!supplement) {
     return (
@@ -65,6 +65,7 @@ export default async function SupplementPage({params}) {
   }
 
   return (
+    <>
     <SupplementCard
       title={supplement.title}
       description={supplement.description}
@@ -72,5 +73,6 @@ export default async function SupplementPage({params}) {
       price={supplement.price}
       servings={supplement.servings}
     />
+    </>
   );
 }

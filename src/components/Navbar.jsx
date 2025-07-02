@@ -1,3 +1,4 @@
+"use client"
 import Link from "next/link"
 import { House, UtensilsCrossed, PillBottle, Star } from 'lucide-react';
 
@@ -104,8 +105,8 @@ export function Navbar() {
                         </NavigationMenuTrigger>
                         <NavigationMenuContent>
                             <ul className="grid w-[320px] gap-2 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
-                                {dietPlans.map((item) => (
-                                    <DietListItem key={item.href} title={item.title} href={item.href}>
+                                {dietPlans.map((item,index) => (
+                                    <DietListItem key={index} title={item.title} href={item.href}>
                                         {item.description}
                                     </DietListItem>
                                 ))}
@@ -122,8 +123,8 @@ export function Navbar() {
                         </NavigationMenuTrigger>
                         <NavigationMenuContent>
                             <ul className="grid w-[320px] gap-2 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
-                                {supplements.map((item) => (
-                                    <DietListItem key={item.href} title={item.title} href={item.href}>
+                                {supplements.map((item,index) => (
+                                    <DietListItem key={index} title={item.title} href={item.href}>
                                         {item.description}
                                     </DietListItem>
                                 ))}

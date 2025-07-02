@@ -1,3 +1,4 @@
+"use client"
 import {MapPin, Mail, Phone } from 'lucide-react';
 
 function Footer() {
