@@ -39,11 +39,14 @@ A sleek, responsive gym and fitness website built entirely with **Next.js**, **T
 
 
 ## ⚙️ Installation & Setup
-    ```bash
-    1. git clone https://github.com/Abdullah-Hassan20/Gym.git
-    2. cd Gym
-    3. npm install
-    4. npm run dev
+
+```bash
+git clone https://github.com/Abdullah-Hassan20/Gym.git
+cd Gym
+npm install
+npm run dev
+```
+
 
 ## ✍️ Aurthor
 
