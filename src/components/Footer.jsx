@@ -1,37 +1,40 @@
-"use client"
-import {MapPin, Mail, Phone } from 'lucide-react';
+"use client";
+import { Instagram, Facebook ,Phone} from 'lucide-react';
+import Link from 'next/link';
 
 function Footer() {
-    return (
-        <div>
-            <footer className="bg-black text-white py-5 flex justify-between gap-3">
+  return (
+    <footer className="bg-pink-900 text-white py-5 px-4 sm:px-10 flex justify-between items-center gap-3">
+      
+      {/* Left: Branding + Contact Info */}
+      <div className="flex flex-col sm:items-start items-center gap-1">
+        <span className="text-sm sm:text-base font-medium max-sm:hidden">@ Nafees Cake House. All rights reserved.</span>
+        <span className="text-md flex gap-2"><Phone/>+92 320 2797500</span> {/* Replace with your real contact */}
+      </div>
 
-                <div className='flex items-center ml-1 sm:ml-10'>@ KRATOS FITNESS. All rights reserved.</div>
-
-                <div className="flex flex-col items-center gap-2 mr-1 sm:mr-10 text-white ">
-                    <h2 className="text-xl font-bold md:flex md:justify-start w-full">Contact Us</h2>
-                    <div className="">
-                        <div className="flex-col md:flex-row justify-around items-center gap-2">
-                            <div className="text-xs md:text-sm flex items-center gap-1">
-                                <MapPin size={20} className="text-yellow-400 " />
-                                <p>Street 123, Sargodha</p>
-                            </div>
-                            <div className="text-xs md:text-sm flex items-center gap-1">
-                                <Mail size={17} className="text-yellow-400" />
-                                <p>contact@kratosfitness.com</p>
-                            </div>
-                            <div className="text-xs md:text-sm flex items-center gap-1">
-                                <Phone size={17} className="text-yellow-400" />
-                                <p>+92-302-0663387</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </footer>
-
+      {/* Right: Social Media */}
+      <div className="flex flex-col items-center sm:items-end gap-2">
+        <h2 className="font-bold text-xl">Reach us</h2>
+        <div className="flex gap-4 items-center justify-center">
+          <Link
+            href="https://www.instagram.com/nafees_cakeshouse"
+            target="_blank"
+            aria-label="Instagram"
+          >
+            <Instagram className="w-6 h-6 hover:text-pink-500 transition-colors" />
+          </Link>
+          <Link
+            href="https://www.facebook.com/p/Nafees-Cake-House-100063778793458/"
+            target="_blank"
+            aria-label="Facebook"
+          >
+            <Facebook className="w-6 h-6 hover:text-blue-500 transition-colors" />
+          </Link>
         </div>
-    )
+      </div>
+    </footer>
+  );
 }
 
-export default Footer
+export default Footer;
+

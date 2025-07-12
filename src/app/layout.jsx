@@ -14,8 +14,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Gym app",
-  description: "Created by Abdullah Hassan",
+  title: "Nafees Cake House",
+  description: "Get your customized orders",
+  icons: {
+    icon: '/bakery/logo.png'
+  }
 };
 
 export default function RootLayout({ children }) {
@@ -23,7 +26,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <Navbar/>
-        {children}
+        <div className="bg-gradient-to-r from-pink-700 to-pink-500">{children}</div>
         <Footer/>
       </body>
     </html>

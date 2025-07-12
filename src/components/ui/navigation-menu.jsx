@@ -75,7 +75,7 @@ function NavigationMenuContent({ className, ...props }) {
     <NavigationMenuPrimitive.Content
       data-slot="navigation-menu-content"
       className={cn(
-        "bg-gray-800 text-white transition-all duration-700 ease-in-out",
+        "bg-pink-600 transition-all duration-700 ease-in-out",
         "w-full md:w-auto p-2 md:absolute md:top-0 md:left-0",
         className
       )}
@@ -134,10 +134,10 @@ function NavigationMenuIndicator({ className, ...props }) {
 
 function DietListItem({ title, href, children }) {
   return (
-    <li className="p-2 m-2 hover:bg-gray-700 rounded-xl hover:shadow-2xl hover:scale-105 transition-all duration-300">
+    <li className="p-2 m-2 hover:bg-pink-800 rounded-xl hover:shadow-2xl hover:scale-105 transition-all duration-300">
       <a href={href}>
-        <div className="text-white">{title}</div>
-        <p className="text-gray-400 text-sm">{children}</p>
+        <div className="text-white font-bold">{title}</div>
+        <p className="text-white text-sm">{children}</p>
       </a>
     </li>
   )

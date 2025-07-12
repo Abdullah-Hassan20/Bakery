@@ -13,75 +13,33 @@ import {
     navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
 
-const dietPlans = [
-    {
-        title: "Muscle Gain Plan",
-        href: "/diet/muscleGain",
-        description: "A high-protein, calorie-surplus meal plan designed to support muscle hypertrophy and strength training.",
-    },
-    {
-        title: "Fat Loss Plan",
-        href: "/diet/fatLoss",
-        description: "A calorie-deficit, low-carb diet focused on burning fat while maintaining lean muscle mass.",
-    },
-    {
-        title: "Balanced Nutrition",
-        href: "/diet/balanced",
-        description: "A well-rounded diet plan combining protein, carbs, and healthy fats for general health and fitness.",
-    },
-    {
-        title: "Keto Diet",
-        href: "/diet/keto",
-        description: "A low-carb, high-fat diet that shifts your body into ketosis, ideal for rapid fat loss and sustained energy.",
-    },
-    {
-        title: "Intermittent Fasting",
-        href: "/diet/intermittentFasting",
-        description: "A timed eating schedule that improves metabolism and fat burn while simplifying your meal routine.",
-    },
-    {
-        title: "Vegetarian Athlete Plan",
-        href: "/diet/vegetarian",
-        description: "A plant-based meal plan packed with protein and nutrients tailored for active individuals.",
-    },
-]
+const bakeryItems = [
+  {
+    title: "Cakes",
+    href: "/bakery/cakes",
+    description: "Custom-designed, deliciously moist cakes perfect for birthdays, weddings, and all your special moments.",
+  },
+  {
+    title: "Pastries",
+    href: "/bakery/pastries",
+    description: "Flaky, creamy, and irresistibly fresh pastries — ideal for tea time or sweet cravings anytime.",
+  },
+  {
+    title: "Donuts",
+    href: "/bakery/donuts",
+    description: "Soft and fluffy donuts topped with rich glazes and sprinkles, baked fresh daily for pure delight.",
+  },
+  {
+    title: "Cupcakes",
+    href: "/bakery/cupcakes",
+    description: "Miniature treats bursting with flavor and frosted to perfection — great for parties or personal indulgence.",
+  },
+];
 
-const supplements = [
-    {
-        title: "Whey Protein",
-        href: "/supplements/whey-protein",
-        description: "Fast-digesting protein ideal for muscle recovery and growth post-workout.",
-    },
-    {
-        title: "Creatine Monohydrate",
-        href: "/supplements/creatine",
-        description: "Boosts strength, performance, and muscle volume during high-intensity training.",
-    },
-    {
-        title: "Branched-Chain Amino Acids (BCAAs)",
-        href: "/supplements/bcaas",
-        description: "Reduces muscle soreness and supports endurance by preventing muscle breakdown.",
-    },
-    {
-        title: "Pre-Workout",
-        href: "/supplements/pre-workout",
-        description: "Increases energy, focus, and pump before workouts with stimulants and nitric oxide boosters.",
-    },
-    {
-        title: "Multivitamins",
-        href: "/supplements/multivitamins",
-        description: "Supports overall health and fills nutritional gaps to optimize performance.",
-    },
-    {
-        title: "Fish Oil (Omega-3)",
-        href: "/supplements/fish-oil",
-        description: "Promotes heart health, joint flexibility, and reduces inflammation for active individuals.",
-    },4
-]
 
 export function Navbar() {
     return (
-        <nav className="flex items-center justify-between bg-gradient-to-r from-gray-950 to-gray-600 p-5 shadow-2xl">
+        <nav className="flex sticky top-0 w-full items-center justify-between bg-pink-800 p-5 shadow-2xl z-10">
             <NavigationMenu className="w-full">
                 <NavigationMenuList>
 
@@ -100,31 +58,13 @@ export function Navbar() {
                         <NavigationMenuTrigger>
                             <div className="flex items-center gap-1 font-bold text-white">
                                 <UtensilsCrossed size={17} color="white" />
-                                Diet Plans
+                                Bakery Items
                             </div>
                         </NavigationMenuTrigger>
                         <NavigationMenuContent>
                             <ul className="grid w-[320px] gap-2 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
-                                {dietPlans.map((item,index) => (
-                                    <DietListItem key={index} title={item.title} href={item.href}>
-                                        {item.description}
-                                    </DietListItem>
-                                ))}
-                            </ul>
-                        </NavigationMenuContent>
-                    </NavigationMenuItem>
-
-                    <NavigationMenuItem>
-                        <NavigationMenuTrigger>
-                            <div className="flex items-center gap-1 font-bold text-white">
-                                <PillBottle size={16} color="white" />
-                                Supplements
-                            </div>
-                        </NavigationMenuTrigger>
-                        <NavigationMenuContent>
-                            <ul className="grid w-[320px] gap-2 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
-                                {supplements.map((item,index) => (
-                                    <DietListItem key={index} title={item.title} href={item.href}>
+                                {bakeryItems.map((item,index) => (
+                                    <DietListItem key={index} title={item.title} href={item.href} >
                                         {item.description}
                                     </DietListItem>
                                 ))}
@@ -134,10 +74,10 @@ export function Navbar() {
 
                     <NavigationMenuItem className="text-nowrap">
                         <NavigationMenuLink asChild>
-                            <Link href="/training" className={navigationMenuTriggerStyle()}>
+                            <Link href="/contact" className={navigationMenuTriggerStyle()}>
                                 <div className="flex items-center gap-1 font-bold text-white">
                                     <Star size={18} color="white" />
-                                    Personalized Training
+                                    Contact us
                                 </div>
                             </Link>
                         </NavigationMenuLink>
@@ -148,9 +88,9 @@ export function Navbar() {
 
             <div className="w-full flex justify-center xl:justify-end xl:mr-10">
                 <div className="flex-col font-bold text-2xl leading-tight w-fit">
-                    <p className="text-yellow-400">KRATOS</p>
-                    <p className="text-red-500 flex">FITNESS</p>
-                    <p className="text-white text-[10px]">Achieve your dream physique</p>
+                    <p className="text-white">NAFEES</p>
+                    <p className="text-white flex">CAKE HOUSE</p>
+                    <p className="text-white text-[10px]">Crafted with care. Tasted with love.</p>
                 </div>
             </div>
         </nav>
