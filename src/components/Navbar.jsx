@@ -22,12 +22,12 @@ const bakeryItems = [
   {
     title: "Pastries",
     href: "/bakery/pastries",
-    description: "Flaky, creamy, and irresistibly fresh pastries — ideal for tea time or sweet cravings anytime.",
+    description: "Flaky, creamy, and irresistibly fresh pastries,ideal for tea time or sweet cravings anytime.",
   },
   {
     title: "Cupcakes",
     href: "/bakery/cupcakes",
-    description: "Miniature treats bursting with flavor and frosted to perfection — great for parties or personal indulgence.",
+    description: "Miniature treats bursting with flavor and frosted to perfection,great for parties or personal indulgence.",
   },
 ];
 
