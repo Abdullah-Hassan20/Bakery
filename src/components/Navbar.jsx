@@ -25,11 +25,6 @@ const bakeryItems = [
     description: "Flaky, creamy, and irresistibly fresh pastries — ideal for tea time or sweet cravings anytime.",
   },
   {
-    title: "Donuts",
-    href: "/bakery/donuts",
-    description: "Soft and fluffy donuts topped with rich glazes and sprinkles, baked fresh daily for pure delight.",
-  },
-  {
     title: "Cupcakes",
     href: "/bakery/cupcakes",
     description: "Miniature treats bursting with flavor and frosted to perfection — great for parties or personal indulgence.",
@@ -39,7 +34,7 @@ const bakeryItems = [
 
 export function Navbar() {
     return (
-        <nav className="flex sticky top-0 w-full items-center justify-between bg-pink-800 p-5 shadow-2xl z-10">
+        <nav className="flex sticky top-0 w-full items-center justify-between p-2 bg-gradient-to-t from-pink-400 to-pink-900 shadow-2xl z-10">
             <NavigationMenu className="w-full">
                 <NavigationMenuList>
 
@@ -90,7 +85,7 @@ export function Navbar() {
                 <div className="flex-col font-bold text-2xl leading-tight w-fit">
                     <p className="text-white">NAFEES</p>
                     <p className="text-white flex">CAKE HOUSE</p>
-                    <p className="text-white text-[10px]">Crafted with care. Tasted with love.</p>
+                    <p className="text-white text-[10px]">Crafted with care & love.</p>
                 </div>
             </div>
         </nav>

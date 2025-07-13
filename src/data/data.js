@@ -19,15 +19,27 @@ const cupcakes = [
     cupcakes: [
       {
         name: "Red Velvet",
-        image: "/bakery/main.png",
+        image: "/items/cupcakes/red.png",
         pricePerPiece: 220,
-        flavors: ["Red Velvet", "Cream Cheese"],
+        flavors: ["Red Velvet", "Cream Cheese Frosting"],
       },
       {
         name: "Vanilla Swirl",
-        image: "/cupcakes/classic/vanilla.jpg",
+        image: "/items/cupcakes/venila.png",
         pricePerPiece: 200,
-        flavors: ["Vanilla", "Buttercream"],
+        flavors: ["Vanilla Bean", "Buttercream"],
+      },
+      {
+        name: "Chocolate",
+        image: "/items/cupcakes/chocolate.png",
+        pricePerPiece: 220,
+        flavors: ["Rich Cocoa", "Chocolate Ganache"],
+      },
+      {
+        name: "Strawberry",
+        image: "/items/cupcakes/strawberry.png",
+        pricePerPiece: 220,
+        flavors: ["Strawberry Puree", "Whipped Cream"],
       },
     ],
   },
@@ -36,19 +48,32 @@ const cupcakes = [
     cupcakes: [
       {
         name: "Birthday Blast",
-        image: "/cupcakes/themed/birthday.jpg",
+        image: "/items/cupcakes/birthday.png",
         pricePerPiece: 250,
-        flavors: ["Chocolate", "Strawberry"],
+        flavors: ["Funfetti Vanilla", "Rainbow Sprinkles"],
+      },
+      {
+        name: "Oceal Perl",
+        image: "/items/cupcakes/ocean.png",
+        pricePerPiece: 250,
+        flavors: ["Salted Caramel", "Sea Salt Buttercream"],
+      },
+      {
+        name: "Princess",
+        image: "/items/cupcakes/princess.png",
+        pricePerPiece: 250,
+        flavors: ["Raspberry", "White Chocolate Mousse"],
       },
       {
         name: "Rainbow Cupcake",
-        image: "/cupcakes/themed/rainbow.jpg",
+        image: "/items/cupcakes/rainbow.png",
         pricePerPiece: 260,
-        flavors: ["Fruit Mix", "Vanilla"],
+        flavors: ["Mixed Fruits", "Vanilla Rainbow Frosting"],
       },
     ],
   },
 ];
+
 
 const cakes = [
   {
@@ -56,17 +81,24 @@ const cakes = [
     cakes: [
       {
         name: "Chocolate Fudge Cake",
-        image: "/items/cakes/choco.jpg",
+        image: "/items/cakes/choco.png",
         pricePerPound: 1200,
         pounds: [2, 3, 4],
-        flavors: ["Chocolate", "Dark Chocolate", "Choco-Chip"],
+        flavors: ["Dark Chocolate", "Choco-Chip Ganache", "Fudge Core"],
       },
       {
         name: "Vanilla Celebration Cake",
-        image: "/items/cakes/venilla.jpg",
+        image: "/items/cakes/venila.png",
         pricePerPound: 1000,
         pounds: [2, 2.5, 3],
-        flavors: ["Vanilla", "Strawberry", "Caramel"],
+        flavors: ["Vanilla Bean", "Caramel Drizzle", "Whipped Cream"],
+      },
+      {
+        name: "Strawberry Cake",
+        image: "/items/cakes/strawberry.png",
+        pricePerPound: 1000,
+        pounds: [2, 2.5, 3],
+        flavors: ["Fresh Strawberry", "Vanilla Cream", "Strawberry Jam"],
       },
     ],
   },
@@ -74,78 +106,77 @@ const cakes = [
     category: "Wedding Cakes",
     cakes: [
       {
-        name: "3-Tier Floral Cake",
-        image: "/items/cakes/3tier.jpg",
+        name: "1-Tier Floral Cake",
+        image: "/items/cakes/1tier.png",
         pricePerPound: 1500,
         pounds: [4, 6, 8],
-        flavors: ["Vanilla", "Pineapple", "Chocolate"],
+        flavors: ["Vanilla Rose", "Pineapple Cream", "White Chocolate"],
       },
       {
-        name: "Royal White Cake",
-        image: "/items/cakes/royal.jpg",
-        pricePerPound: 1600,
-        pounds: [5, 7, 9],
-        flavors: ["Almond", "Coconut", "Vanilla"],
+        name: "2-Tier Floral Cake",
+        image: "/items/cakes/2tier.png",
+        pricePerPound: 1500,
+        pounds: [4, 6, 8],
+        flavors: ["Vanilla Almond", "Lemon Curd", "Chocolate Fudge"],
       },
+      {
+        name: "3-Tier Floral Cake",
+        image: "/items/cakes/3tier.png",
+        pricePerPound: 1500,
+        pounds: [4, 6, 8],
+        flavors: ["Raspberry Vanilla", "Hazelnut Cream", "Coconut Milk"],
+      }
     ],
   },
   {
     category: "Kids Cakes",
     cakes: [
       {
-        name: "Spiderman Cake",
-        image: "/items/cakes/spider.jpg",
+        name: "Adoral",
+        image: "/items/cakes/adoral.png",
         pricePerPound: 1300,
         pounds: [2, 3],
-        flavors: ["Chocolate", "Vanilla"],
+        flavors: ["Vanilla Funfetti", "Chocolate Chip", "Caramel Cream"],
+      },
+      {
+        name: "Micky Mouse",
+        image: "/items/cakes/micky.png",
+        pricePerPound: 1300,
+        pounds: [2, 3],
+        flavors: ["Chocolate Fudge", "Cookies & Cream", "Vanilla"],
       },
       {
         name: "Unicorn Cake",
-        image: "/items/cakes/uni.jpg",
+        image: "/items/cakes/uni.png",
+        pricePerPound: 1300,
+        pounds: [2, 3],
+        flavors: ["Rainbow Vanilla", "Cotton Candy", "Bubblegum"],
+      },
+      {
+        name: "Tracky Cake",
+        image: "/items/cakes/car.png",
+        pricePerPound: 1300,
+        pounds: [2, 3],
+        flavors: ["Chocolate Crunch", "Toffee Cream", "Vanilla"],
+      },
+      {
+        name: "Creature Cake",
+        image: "/items/cakes/creature.png",
+        pricePerPound: 1300,
+        pounds: [2, 3],
+        flavors: ["Oreo Vanilla", "Chocolate Lava", "Caramel"],
+      },
+      {
+        name: "Catty Cake",
+        image: "/items/cakes/catty.png",
         pricePerPound: 1400,
         pounds: [2, 2.5, 3],
-        flavors: ["Strawberry", "Bubblegum", "Vanilla"],
+        flavors: ["Strawberry Milk", "Bubblegum Bliss", "Vanilla"],
       },
     ],
   },
 ];
-
-const donuts = [
-  {
-    category: "Classic Donuts",
-    donuts: [
-      {
-        name: "Glazed Donut",
-        image: "/donuts/classic/glazed.jpg",
-        pricePerPiece: 150,
-        flavors: ["Vanilla", "Maple", "Strawberry"],
-      },
-      {
-        name: "Chocolate Ring",
-        image: "/donuts/classic/chocolate.jpg",
-        pricePerPiece: 180,
-        flavors: ["Chocolate", "Dark Chocolate"],
-      },
-    ],
-  },
-  {
-    category: "Stuffed Donuts",
-    donuts: [
-      {
-        name: "Boston Cream",
-        image: "/donuts/stuffed/boston.jpg",
-        pricePerPiece: 200,
-        flavors: ["Vanilla Custard", "Chocolate"],
-      },
-      {
-        name: "Jam-Filled Donut",
-        image: "/donuts/stuffed/jam.jpg",
-        pricePerPiece: 180,
-        flavors: ["Strawberry", "Raspberry", "Blueberry"],
-      },
-    ],
-  },
-];
+;
 
 const pastries= [
   {
@@ -153,37 +184,37 @@ const pastries= [
     pastries: [
       {
         name: "Vanilla Cream Pastry",
-        image: "/pastries/cream/vanilla.jpg",
+        image: "/items/pastries/venila.png",
         pricePerPiece: 250,
         flavors: ["Vanilla", "Caramel"],
       },
       {
         name: "Chocolate Cream Pastry",
-        image: "/pastries/cream/chocolate.jpg",
+        image: "/items/pastries/chocolate.png",
         pricePerPiece: 270,
         flavors: ["Chocolate", "Hazelnut"],
       },
     ],
   },
   {
-    category: "Fruit Pastries",
-    pastries: [
-      {
-        name: "Strawberry Slice",
-        image: "/pastries/fruit/strawberry.jpg",
-        pricePerPiece: 260,
-        flavors: ["Strawberry", "Vanilla"],
-      },
-      {
-        name: "Mango Mousse Pastry",
-        image: "/pastries/fruit/mango.jpg",
-        pricePerPiece: 280,
-        flavors: ["Mango", "Coconut"],
-      },
-    ],
-  },
+  category: "Brownies",
+  pastries: [
+    {
+      name: "Caramel",
+      image: "/items/pastries/caremal.png",
+      pricePerPiece: 260,
+      flavors: ["Salted Caramel", "Butterscotch Drizzle"],
+    },
+    {
+      name: "Choco",
+      image: "/items/pastries/choco.png",
+      pricePerPiece: 280,
+      flavors: ["Dark Chocolate", "Chocolate Chips"],
+    },
+  ],
+}
 ];
 
-const data={testimonials,pastries,cupcakes,cakes,donuts}
+const data={testimonials,pastries,cupcakes,cakes}
 
 export default data

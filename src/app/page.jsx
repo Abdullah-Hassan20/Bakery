@@ -15,7 +15,7 @@ function HomePage() {
       <section className="flex min-h-screen w-full items-center justify-center px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-7xl mt-20 mb-15 px-6">
           <div className="relative w-full h-[300px]">
-            <Image src="/bakery/main.png" alt="cake" layout="fill" objectFit="contain" className="bg-transparent" priority />
+            <Image src="/bakery/main2.png" alt="cake" layout="fill" objectFit="contain" className="bg-transparent" priority />
           </div>
           <div className="flex flex-col justify-center gap-4">
             <h1 className="text-2xl font-extrabold text-white leading-tight">
@@ -31,6 +31,7 @@ function HomePage() {
               Order Now
             </button>
           </div>
+          
         </div>
       </section>
 
@@ -46,7 +47,7 @@ function HomePage() {
 
         <div className="grid grid-cols-1 grid-rows-4 md:grid-cols-2 md:grid-rows-2 lg:grid-cols-4 lg:grid-rows-1 w-fit mx-auto mt-10 gap-5 lg:gap-10">
           {/* Card 1 */}
-          <div className="hover:shadow-2xl hover:scale-105 hover:bg-pink-900 transition-all duration-300 max-w-[330px] bg-pink-600 rounded-2xl shadow-xl p-3 md:p-6 mx-auto flex flex-col">
+          <div className="hover:shadow-2xl hover:scale-105 hover:bg-pink-600 transition-all duration-300 max-w-[330px] bg-pink-400 md:bg-pink-500 rounded-2xl shadow-xl p-3 md:p-6 mx-auto flex flex-col">
             <div className="relative w-[200px] h-[170px] rounded-lg overflow-hidden mb-4 mx-auto">
               <Image src="/bakery/bakery1.png" layout="fill" alt="Bakery" objectFit="cover" objectPosition="center" className="bg-transparent" priority />
             </div>
@@ -57,7 +58,7 @@ function HomePage() {
           </div>
 
           {/* Card 2 */}
-          <div className="hover:shadow-2xl hover:scale-105 hover:bg-pink-900 transition-all duration-300 max-w-[330px] bg-pink-600 rounded-2xl shadow-xl p-3 md:p-6 mx-auto flex flex-col">
+          <div className="hover:shadow-2xl hover:scale-105 hover:bg-pink-600 transition-all duration-300 max-w-[330px] bg-pink-400 md:bg-pink-500 rounded-2xl shadow-xl p-3 md:p-6 mx-auto flex flex-col">
             <div className="relative w-[200px] h-[170px] rounded-lg overflow-hidden mb-4 mx-auto">
               <Image src="/bakery/bakery2.png" layout="fill" alt="Bakery" objectFit="cover" objectPosition="center" className="bg-transparent" priority />
             </div>
@@ -68,7 +69,7 @@ function HomePage() {
           </div>
 
           {/* Card 3 */}
-          <div className="hover:shadow-2xl hover:scale-105 hover:bg-pink-900 transition-all duration-300 max-w-[330px] bg-pink-600 rounded-2xl shadow-xl p-3 md:p-6 mx-auto flex flex-col">
+          <div className="hover:shadow-2xl hover:scale-105 hover:bg-pink-600 transition-all duration-300 max-w-[330px] bg-pink-400 md:bg-pink-500 rounded-2xl shadow-xl p-3 md:p-6 mx-auto flex flex-col">
             <div className="relative w-[200px] h-[170px] rounded-lg overflow-hidden mb-4 mx-auto">
               <Image src="/bakery/bakery3.png" layout="fill" alt="Bakery" objectFit="cover" objectPosition="center" className="bg-transparent" priority />
             </div>
@@ -79,7 +80,7 @@ function HomePage() {
           </div>
 
           {/* Card 4 */}
-          <div className="hover:shadow-2xl hover:scale-105 hover:bg-pink-900 transition-all duration-300 max-w-[330px] bg-pink-600 rounded-2xl p-3 md:p-6 mx-auto flex flex-col">
+          <div className="hover:shadow-2xl hover:scale-105 hover:bg-pink-600 transition-all duration-300 max-w-[330px] bg-pink-400 md:bg-pink-500 rounded-2xl p-3 md:p-6 mx-auto flex flex-col">
             <div className="relative w-[200px] h-[170px] rounded-lg overflow-hidden mb-4 mx-auto">
               <Image src="/bakery/bakery4.png" layout="fill" alt="Bakery" objectFit="cover" objectPosition="center" className="bg-transparent" priority />
             </div>
@@ -101,7 +102,7 @@ function HomePage() {
       <section className="flex min-h-screen w-full items-center justify-center px-6" ref={myRef}>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-7xl mt-20 mb-15 px-6">
           <div className="relative w-full h-[300px]">
-            <Image src="/bakery/main2.png" alt="Cake" layout="fill" objectFit="contain" className="bg-transparent" priority />
+            <Image src="/bakery/main.png" alt="Cake" layout="fill" objectFit="contain" className="bg-transparent" priority />
           </div>
           <div className="flex flex-col justify-center gap-4">
             <h1 className="text-4xl font-extrabold text-white">Order Now</h1>

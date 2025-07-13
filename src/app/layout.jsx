@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <Navbar/>
-        <div className="bg-gradient-to-r from-pink-700 to-pink-500">{children}</div>
+        <div className="bg-gradient-to-r from-pink-200 to-pink-100 md:bg-bg-gradient-to-r from-pink-600 to-pink-500">{children}</div>
         <Footer/>
       </body>
     </html>

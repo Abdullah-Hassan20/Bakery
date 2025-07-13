@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 function Footer() {
   return (
-    <footer className="bg-pink-900 text-white py-5 px-4 sm:px-10 flex justify-between items-center gap-3">
+    <footer className="sticky bottom-0 border-t w-screen bg-gradient-to-t from-pink-400 to-pink-900 text-white py-1 px-4 sm:px-10 flex justify-between items-center gap-3">
       
       {/* Left: Branding + Contact Info */}
       <div className="flex flex-col sm:items-start items-center gap-1">

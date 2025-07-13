@@ -6,13 +6,13 @@ import data from "@/data/data";
 export default function CustomerSatisfaction() {
   const testimonials=data.testimonials
   return (
-    <section className="w-full py-16 px-6 flex flex-col items-center text-white">
+    <section className="w-full py-16 flex flex-col items-center text-white">
       <h2 className="text-3xl font-extrabold mb-4">Happy Customers</h2>
-      <p className="text-center max-w-2xl mb-10 text-gray-200">
+      <p className="text-center max-w-2xl mb-10 text-white">
         Your satisfaction is our recipe for success. Here are real chats and orders we proudly delivered!
       </p>
 
-      <div className="w-full overflow-x-auto scrollbar-custom p-5 bg-pink-800 rounded-2xl">
+      <div className="w-full overflow-x-auto scrollbar-custom p-5 bg-pink-300 md:bg-pink-400 rounded-2xl">
         <div className="flex gap-6 w-max px-2 pb-2">
           {testimonials.map((item, index) => (
             <FlipCard
@@ -64,7 +64,7 @@ function FlipCard({ front, back, alt }) {
         </div>
       </div>
 
-      <span className="text-sm text-gray-200 font-medium">
+      <span className="text-sm text-pink-900 font-bold">
         {flipped ? "Delivered Cake" : "Chat Screenshot"}
       </span>
     </div>
