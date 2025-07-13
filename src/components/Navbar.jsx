@@ -34,7 +34,7 @@ const bakeryItems = [
 
 export function Navbar() {
     return (
-        <nav className="flex sticky top-0 w-full items-center justify-between p-2 bg-gradient-to-t from-pink-400 to-pink-900 shadow-2xl z-10">
+        <nav className="flex sticky top-0 w-full items-center justify-between p-2 bg-gradient-to-b from-pink-400 to-pink-900 shadow-2xl z-10">
             <NavigationMenu className="w-full">
                 <NavigationMenuList>
 
