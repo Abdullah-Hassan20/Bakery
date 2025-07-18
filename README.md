@@ -28,10 +28,10 @@ A modern, responsive **bakery website** crafted using **Next.js** and **Tailwind
 
 > _You can add real screenshots later — placeholders used for now._
 
-<img width="250" height="408" alt="b1" src="https://github.com/user-attachments/assets/4fd6a33b-651e-4c78-9477-fc5279924da5" />
-<img width="250" height="407" alt="b2" src="https://github.com/user-attachments/assets/f13243eb-bca4-40d2-b231-c23b00e45b4f" />
-<img width="250" height="408" alt="b3" src="https://github.com/user-attachments/assets/4024aeab-fdb0-4c59-ad4e-219540c2431a" />
-<img width="250" height="407" alt="b4" src="https://github.com/user-attachments/assets/cf3d72a1-8ad7-48cb-845e-fc5b91d363f4" />
+<img width="350" height="500" alt="b1" src="https://github.com/user-attachments/assets/4fd6a33b-651e-4c78-9477-fc5279924da5" />
+<img width="350" height="500" alt="b2" src="https://github.com/user-attachments/assets/f13243eb-bca4-40d2-b231-c23b00e45b4f" />
+<img width="350" height="500" alt="b3" src="https://github.com/user-attachments/assets/4024aeab-fdb0-4c59-ad4e-219540c2431a" />
+<img width="350" height="500" alt="b4" src="https://github.com/user-attachments/assets/cf3d72a1-8ad7-48cb-845e-fc5b91d363f4" />
 
 
 ---
